@@ -16,6 +16,13 @@ const userSchema = mongoose.Schema({
             "Please enter a valid email",
         ],       
     },
+    password:{
+        type: String,
+        required: [true, "please add you password"],
+        minlLength: [6, "password must be 6 char"],
+        maxlLength: [23, "password must more than 23 char"],
+    },
+    
 });
 
 const User = mongoose.model("User", userSchema)
