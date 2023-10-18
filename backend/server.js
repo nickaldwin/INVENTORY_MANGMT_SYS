@@ -12,11 +12,15 @@ app.use(express.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 
+const userRoutes = require("./routes/userRoutes")
+
 //adding routes
 app.get("/", (req, res) =>{
     res.send("Homepage")
 });
+//routes middleware
 
+app.use("/api/users", userRoutes);
 
 //the port
 const PORT = process.env.PORT || 5000;
