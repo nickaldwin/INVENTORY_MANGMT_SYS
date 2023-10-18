@@ -23,6 +23,8 @@ const userSchema = mongoose.Schema({
         maxlLength: [23, "password must more than 23 char"],
     },
     
+}, {
+    timestamps: true
 });
 
 const User = mongoose.model("User", userSchema)
