@@ -24,9 +24,26 @@ use to oversee and control their inventory. Inventory refers to the goods and ma
 
 ## Features
 
-List the key features of your project, highlighting what sets it apart.
+- Stock Tracking: It keeps track of the quantity, location, and status of all items in the inventory.
 
+- Order Management: It helps in creating purchase orders for restocking and sales orders to fulfill customer demands.
 
+- Stock Level Alerts: Automated alerts for reorder points or minimum stock levels to prevent stockouts.
+
+-  Barcode Scanning: Scanning technology is often used for efficient tracking and management of inventory items.
+
+- Forecasting: Predictive tools that use historical data and trends to estimate future demand and optimize ordering.
+
+- Categorization and Classification: Sorting items into categories to manage them more effectively
+
+- Multi-location Support: For businesses with multiple warehouses or store locations.
+- Inventory Valuation: Tools for calculating the value of the inventory, often using methods like FIFO (First-In, First-Out) or LIFO (Last-In, First-Out).
+
+- Reporting and Analytics: Provides insights into inventory turnover, holding costs, and more.
+
+- Integration: Interfaces with other business systems such as accounting software, e-commerce platforms, and point of sale (POS) systems.
+
+- Security: Ensures data integrity and protection against theft or fraud.
 
 ## Getting Started
 
