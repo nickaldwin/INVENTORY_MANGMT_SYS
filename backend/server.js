@@ -7,6 +7,19 @@ const cors = require("cors");
 const app = express()
 
 
+//middlewares
+
+app.use(express.json());
+app.use(express.urlencoded());
+
+
+
+//adding routes
+app.get("/", (req, res) =>{
+    res.send("Homepage")
+})
+
+
 //the port
 const PORT = process.env.PORT || 5000;
 
