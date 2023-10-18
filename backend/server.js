@@ -6,18 +6,16 @@ const cors = require("cors");
 
 const app = express()
 
-
 //middlewares
-
 app.use(express.json());
-app.use(express.urlencoded());
-
+app.use(express.urlencoded({extended:false}));
+app.use(bodyParser.json());
 
 
 //adding routes
 app.get("/", (req, res) =>{
     res.send("Homepage")
-})
+});
 
 
 //the port
@@ -32,4 +30,4 @@ mongoose
             console.log(`server running on port ${PORT}`)
         })
     })
-    .catch((err) => console.log(err))
+    .catch((err) => console.log(err));
