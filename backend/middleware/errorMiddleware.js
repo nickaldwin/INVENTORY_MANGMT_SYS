@@ -6,7 +6,12 @@ const errorHaldlerS = (req, res, res, next) => {
             message: err.message
         })
 
+
+        //error handler
         res.json({
-            //ABANGAN 
+            message: err.message,
+            stack: process.env.NODE_ENV === "development" ?err.stack :null
         })
 };
+
+module.exports = errorHaldlerS

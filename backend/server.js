@@ -6,7 +6,7 @@ const cors = require("cors");
 
 const app = express()
 
-//middlewares
+const errorHaldlerS = require("./middleware/errorMiddleware");
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use(bodyParser.json());
@@ -35,3 +35,7 @@ mongoose
         })
     })
     .catch((err) => console.log(err));
+
+
+    //error handler middleware
+    app.use(errorHaldlerS);
