@@ -1,5 +1,11 @@
 const express = require("express");
 
 const registerUser = async(req, res) => {
-    //to be continued
+    res.send("Register User")
 }
+
+
+module.exports = {
+    registerUser,
+
+};
