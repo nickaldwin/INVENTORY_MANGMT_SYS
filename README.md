@@ -1,4 +1,4 @@
-# INVENTORY_MANGMT_SYS
+# InventSell
 
 
 ## Table of Contents
